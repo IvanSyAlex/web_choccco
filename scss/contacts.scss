@@ -1,0 +1,22 @@
+.contacts {
+    &__phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 23px;
+        //font-family: AlegreyaSans-Medium;
+        color: white;
+
+        & span {
+            margin-right: 6px;
+        }
+
+        & img {
+            height: 12px;
+            width: 12px;
+
+        }
+    }
+
+}

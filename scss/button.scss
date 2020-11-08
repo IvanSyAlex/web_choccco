@@ -1,0 +1,30 @@
+.button {
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 35px;
+    border: none;
+    padding: 15px 35px;
+
+    &--white {
+        background: white;
+        color: #365A49;
+    }
+
+    &--green {
+
+        &:hover {
+            background: #2E4E3F;
+            color: white;
+        }
+    }
+
+    &--transperent {
+        background: transparent;
+        font-size: 18px;
+
+        &:hover {
+            color: #2E4E3F;
+
+        }
+    }
+}

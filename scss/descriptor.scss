@@ -1,0 +1,16 @@
+.descriptor {
+    color: white;
+    width: 353px;
+    height: 176px;
+    margin-left: 6%;
+
+    & h1 {
+        font-size: 50px;
+    }
+
+    & p {
+        margin-top: 17px;
+        font-size: 21px;
+        margin-bottom: 23px;
+    }
+}

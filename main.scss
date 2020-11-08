@@ -1,0 +1,31 @@
+/* global_style*/
+@import 'css/normalize.css';
+@import 'css/base.css';
+@import 'scss/fonts.scss';
+
+/* welcome_page*/
+
+@import 'scss/head.scss';
+@import 'scss/header.scss';
+@import 'scss/logo.scss';
+@import 'scss/menu.scss';
+@import 'scss/contacts.scss';
+@import 'scss/welcom-page__main.scss';
+@import 'scss/descriptor.scss';
+@import 'scss/button.scss';
+@import 'scss/information.scss';
+
+/* why_chocco*/
+@import 'scss/why-chocco.scss';
+
+/* reviews*/
+@import 'scss/section.scss';
+@import 'scss/reviews.scss';
+@import 'scss/avatar.scss';
+
+/* deliveri*/
+@import 'scss/form.scss';
+@import 'scss/controller.scss';
+
+/*fixed-menu*/
+@import 'scss/fixed-menu.scss';

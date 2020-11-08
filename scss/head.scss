@@ -1,0 +1,31 @@
+.head {
+    min-width: 650px;
+    height: 100vh;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    &--bg {
+        background: url('img/bg/sheet_sketch.png') bottom right no-repeat;
+        background-color: #61C4D9;
+        position: relative;
+
+        &:before {
+            content: url('img/bg/comp.png');
+            position: absolute;
+            right: 0;
+            bottom: -50px;
+        }
+
+        &:after {
+            content: url('img/bg/sheet_3.png');
+            position: absolute;
+            left: 2%;
+            bottom: -50px;
+        }
+    }
+}
