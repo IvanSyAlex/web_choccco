@@ -141,9 +141,13 @@
   background: white;
   color: #365A49;
 }
-.button--green:hover {
+.button--green {
   background: #2E4E3F;
   color: white;
+}
+.button--green:hover {
+  background: white;
+  color: #365A49;
 }
 .button--transperent {
   background: transparent;
@@ -273,10 +277,10 @@
 /* reviews*/
 .section--reviews--bg {
   position: relative;
-  background: url("bg/berries_reviews1.png") top 6% right 2% no-repeat;
+  background: url("img/bg/berries_reviews1.png") top 6% right 2% no-repeat;
 }
 .section--reviews--bg:before {
-  content: url("bg/sketch_reviews.png");
+  content: url("img/bg/sketch_reviews.png");
   z-index: 1;
   position: absolute;
   left: 0;
@@ -290,15 +294,14 @@
   bottom: -96px;
 }
 .section--delivery--bg {
-  background: url("img/bg/fon.png") no-repeat;
-  background-size: 100% 100%;
+  background: url("img/bg/barries_delivery.png") bottom 11% left 5% no-repeat, url("img/bg/fon.png") center/cover no-repeat;
   position: relative;
 }
 .section--delivery--bg:before {
-  content: url("img/bg/barries_delivery.png");
+  content: url("/img/bg/blackberry.png");
   position: absolute;
-  left: 3%;
-  bottom: 9%;
+  right: 0;
+  top: -17%;
 }
 .section--delivery--bg:after {
   content: url("img/bg/sheet_delivery.png");

@@ -11,10 +11,12 @@
     }
 
     &--green {
+        background: #2E4E3F;
+        color: white;
 
         &:hover {
-            background: #2E4E3F;
-            color: white;
+            background: white;
+            color: #365A49;
         }
     }
 
