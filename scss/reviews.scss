@@ -4,9 +4,10 @@
     justify-content: flex-start;
     align-items: center;
 
+
     &__content {
         display: flex;
-        justify-content: flex-start;
+        //justify-content: flex-start;
         position: relative;
         overflow: hidden;
         margin-top: 4%;
@@ -15,11 +16,20 @@
         background: url("img/bg/branch.png") top 6% right no-repeat;
         background-color: #F8FAF9;
 
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 10%;
+            
+        }
+
         &::before {
+            //радиус на фоне
             content: "";
             display: block;
-            width: 90px;
-            height: 90px;
+            width: rem(90px);
+            height: rem(90px);
             border-radius: 50%;
             background-color: white;
             position: absolute;
@@ -30,9 +40,14 @@
     }
 
     &__avatar {
-        width: 250px;
-        height: 260px;
+        width: rem(250px);
+        height: rem(260px);
         margin: 4%;
+
+        @include tablets {
+            width: rem(138px);
+            height: rem(138px);
+        }
     }
 
     &__photo {
@@ -42,19 +57,35 @@
     }
 
     &__text {
-        width: 44%;
+        width: 46%;
+
+        @include tablets {
+            width: 100%;
+            
+        }
 
         & h3 {
-            font-size: 27px;
-            font-family: AlegreyaSans;
+            font-size: rem(32px);
             text-transform: inherit;
             margin-top: 12%;
             margin-bottom: 6%;
+
+            @include tablets {
+                margin-top: 0%;
+                margin-bottom: 2%;
+                font-family: AlegreyaSans-Bold;
+            }
         }
 
         & p {
-            font-size: 18px;
+            font-size: rem(20px);
             margin-bottom: 10%;
+            color: grey;
+
+            @include tablets {
+                margin-bottom: 4%
+            }
         }
+
     }
 }

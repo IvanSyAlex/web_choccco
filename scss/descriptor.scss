@@ -1,16 +1,38 @@
 .descriptor {
     color: white;
-    width: 353px;
-    height: 176px;
+    width: 46%;
+    height: rem(176px);
     margin-left: 6%;
 
     & h1 {
-        font-size: 50px;
+        font-size: rem(50px);
     }
 
     & p {
-        margin-top: 17px;
-        font-size: 21px;
-        margin-bottom: 23px;
+        margin-top: rem(17px);
+        font-size: rem(21px);
+        margin-bottom: rem(23px);
+        padding-right: 10%;
+
+    }
+}
+
+.descriptor {
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:before {
+            content: url('/img/bg_tablets/candy.png');
+        }
+
+        & p {
+            padding: 0 16%;
+        }
     }
 }

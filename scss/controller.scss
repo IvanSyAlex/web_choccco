@@ -1,14 +1,14 @@
 .controller{
-    margin-top: 28px;
+    margin-top: rem(28px);
     display: flex;
     flex-wrap: wrap;
-    height: 80px;
+    height: rem(80px);
     
     &__check{
         display: flex;
         flex-wrap: wrap;
-        margin-right:23px;
-        height: 40px;
+        margin-right:rem(23px);
+        height: rem(40px);
         cursor: pointer;
         user-select: none;
     }
@@ -22,17 +22,17 @@
     }
     &__visible{
         border-radius: 50%;
-        width: 24px;
-        height: 24px;
+        width: rem(24px);
+        height: rem(24px);
         background-color: white;
-        margin-right: 10px;
+        margin-right: rem(10px);
         position: relative;
         &::before{
             content: "";
             display: none;
             border-radius: 50%;
-            width: 18px;
-            height: 18px;
+            width: rem(18px);
+            height: rem(18px);
             background-color: #365A49;
             position: absolute;
             top: 50%;
@@ -50,7 +50,7 @@
     }
     &__title{
         color: #497870;
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: normal;
         text-transform: inherit;
     }

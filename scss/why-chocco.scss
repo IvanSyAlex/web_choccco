@@ -1,10 +1,13 @@
 .why-chocco {
     &--bg {
         background: url('img/bg/sheet_sketch1.png') left top 45% no-repeat;
+        @include tablets{
+            background: url('img/bg/sheet_sketch1.png') left top  no-repeat;
+        }
 
         &::after {
             position: absolute;
-            bottom: -110px;
+            bottom: rem(-1100px);
             left: 0;
             content: url('img/bg/candy_bar.png');
         }
@@ -30,13 +33,13 @@
         margin-top: 15%;
 
         & h2 {
-            font-size: 48px;
+            font-size: rem(48px);
             margin-bottom: 1%;
         }
 
         & p {
             width: 41%;
-            font-size: 18px;
+            font-size: rem(18px);
         }
 
     }
@@ -58,7 +61,7 @@
         &:after {
             position: absolute;
             right: 0;
-            top: 38px;
+            top: rem(38px);
             transform: translateX(50%);
             content: url('bg/Combined_shape.png');
         }
@@ -72,8 +75,8 @@
     }
 
     &__icon {
-        height: 115px;
-        width: 115px;
+        height: rem(115px);
+        width: rem(115px);
         border-radius: 50%;
         background: #F2F5F4;
         display: flex;
@@ -81,8 +84,8 @@
         align-items: center;
 
         & img {
-            height: 70px;
-            width: 70px;
+            height: rem(70px);
+            width: rem(70px);
         }
     }
 
@@ -91,7 +94,7 @@
 
         & h3 {
             margin-top: 12%;
-            font-size: 27px;
+            font-size: rem(27px);
             text-transform: inherit;
             font-family: AlegreyaSans;
         }
@@ -99,7 +102,7 @@
         & p {
             margin-top: 5%;
             width: 90%;
-            font-size: 17px;
+            font-size: rem(17px);
         }
     }
 }

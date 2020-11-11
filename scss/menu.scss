@@ -1,12 +1,18 @@
 .menu {
+    margin: 0 30px;
+    @include tablets{
+        display: none;
+    }
     &__list {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         align-items: flex-start;
     }
 
     &__item {
-        margin-right: 27px;
+        margin-right: rem(27px);
+        white-space: nowrap;
     }
 
     &__item:last-child {
@@ -14,7 +20,7 @@
     }
 
     &__item a {
-        font-size: 18px;
+        font-size: rem(18px);
         color: white;
     }
 }

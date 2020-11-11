@@ -3,7 +3,11 @@
 	justify-content: space-between;
 	align-items: center;
 	font-family: AlegreyaSans-Light;
-	margin-top: 4%;
 	margin-left: 7%;;
 	max-width: 87%;
+}
+.contacts__phone.header__contacts-phone{
+	@include tablets{
+		display: none;
+	} 
 }

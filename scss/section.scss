@@ -1,5 +1,5 @@
 .section {
-    &--reviews--bg {
+    &__reviews--bg {
         position: relative;
         background: url("img/bg/berries_reviews1.png") top 6% right 2% no-repeat;
 
@@ -8,7 +8,7 @@
             z-index: 1;
             position: absolute;
             left: 0;
-            bottom: -160px;
+            bottom: rem(-160px);
         }
 
         &:after {
@@ -16,13 +16,13 @@
             z-index: 1;
             position: absolute;
             left: 0;
-            bottom: -96px;
+            bottom: rem(-96px);
         }
     }
 
-    &--delivery--bg {
-        background: url('img/bg/barries_delivery.png') bottom 11% left 5% no-repeat, 
-        url("img/bg/fon.png") center/cover no-repeat;
+    &__delivery--bg {
+        background: url('img/bg/barries_delivery.png') bottom 11% left 5% no-repeat,
+            url("img/bg/fon.png") center/cover no-repeat;
         position: relative;
 
         &:before {
@@ -50,7 +50,12 @@
 
     &__title {
         margin-top: 9%;
-        font-size: 48px;
+        font-size: rem(48px);
+
+        @include tablets {
+            margin-top: 3%;
+            font-family: AlegreyaSans-Medium;
+        }
 
         &--delivery {
             color: #497870;

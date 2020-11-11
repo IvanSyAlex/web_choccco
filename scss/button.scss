@@ -1,13 +1,18 @@
 .button {
-    font-size: 25px;
+    font-size: rem(25px);
     font-weight: bold;
-    border-radius: 35px;
+    border-radius: rem(35px);
     border: none;
-    padding: 15px 35px;
+    padding: rem(15px) rem(35px);
 
     &--white {
         background: white;
         color: #365A49;
+    }
+
+    &:hover {
+        background: #365A49;
+        color: white;
     }
 
     &--green {
@@ -22,11 +27,12 @@
 
     &--transperent {
         background: transparent;
-        font-size: 18px;
+        font-size: rem(18px);
+        color: #365A49;
 
         &:hover {
-            color: #2E4E3F;
-
+            color: black;
+            background: none;
         }
     }
 }

@@ -1,31 +1,51 @@
 .head {
-    min-width: 650px;
     height: 100vh;
+    min-height: rem(650px);
 
     &__container {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         height: 100%;
+        padding-top: rem(24px);
+        padding-bottom: rem(50px);
+        //background: url('img/bg/comp.png') bottom right / 50% no-repeat;
     }
+
 
     &--bg {
         background: url('img/bg/sheet_sketch.png') bottom right no-repeat;
         background-color: #61C4D9;
         position: relative;
 
+        &:before,
+        &:after {
+            @include tablets {
+                display: none;
+            }
+        }
+
         &:before {
             content: url('img/bg/comp.png');
             position: absolute;
             right: 0;
-            bottom: -50px;
+            bottom: rem(-50px);
         }
 
         &:after {
             content: url('img/bg/sheet_3.png');
             position: absolute;
             left: 2%;
-            bottom: -50px;
+            bottom: rem(-50px);
         }
     }
+
+    &--bg {
+        @include tablets {
+            background: url('img/bg/sheet_sketch.png') top  right no-repeat;
+            background-color: #61C4D9;
+            position: relative;
+        }
+    }
+
 }
