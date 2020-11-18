@@ -254,8 +254,12 @@ img {
     align-items: center;
     text-align: center;
   }
-  .descriptor:before {
-    content: url("/img/bg_tablets/candy.png");
+  .descriptor::before {
+    content: "";
+    width: 17.5555555556rem;
+    height: 18.3333333333rem;
+    background: url("/img/bg_tablets/candy.png") center center no-repeat;
+    background-size: contain;
   }
   .descriptor p {
     padding: 0 16%;
@@ -376,12 +380,17 @@ img {
   justify-content: center;
   margin-top: 5.5%;
 }
+@media screen and (max-width: 768px) {
+  .why-chocco__list {
+    justify-content: space-between;
+  }
+}
 .why-chocco__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 0 5%;
+  padding: 0 3%;
 }
 .why-chocco__item:after {
   position: absolute;
@@ -419,6 +428,11 @@ img {
   margin-top: 5%;
   width: 90%;
   font-size: 0.9444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .why-chocco__text p {
+    width: 100%;
+  }
 }
 
 /* reviews*/

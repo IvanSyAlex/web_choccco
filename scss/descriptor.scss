@@ -27,8 +27,12 @@
         align-items: center;
         text-align: center;
 
-        &:before {
-            content: url('/img/bg_tablets/candy.png');
+        &::before {
+            content:"";
+            width: rem(316px);
+            height: rem(330px);
+            background: url("/img/bg_tablets/candy.png")  center center  no-repeat;
+            background-size: contain;
         }
 
         & p {
