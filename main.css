@@ -159,7 +159,7 @@ img {
 }
 
 .menu {
-  margin: 0 30px;
+  margin: 0 10px;
 }
 @media screen and (max-width: 768px) {
   .menu {
