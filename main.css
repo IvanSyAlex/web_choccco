@@ -258,7 +258,7 @@ img {
     content: "";
     width: 17.5555555556rem;
     height: 18.3333333333rem;
-    background: url("/img/bg_tablets/candy.png") center center no-repeat;
+    background: url(/img/bg_tablets/candy.png) center center no-repeat;
     background-size: contain;
   }
   .descriptor p {

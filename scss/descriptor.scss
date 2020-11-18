@@ -28,12 +28,12 @@
         text-align: center;
 
         &::before {
-            content:"";
-            width: rem(316px);
-            height: rem(330px);
-            background: url("/img/bg_tablets/candy.png")  center center  no-repeat;
-            background-size: contain;
-        }
+            content: "";
+         width: rem(316px);
+         height: rem(330px);
+         background: url(/img/bg_tablets/candy.png)  center center  no-repeat;
+         background-size: contain;
+         }
 
         & p {
             padding: 0 16%;
