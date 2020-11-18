@@ -4,6 +4,9 @@
         @include tablets{
             background: url('img/bg/sheet_sketch1.png') left top  no-repeat;
         }
+        @include phone{
+            background: none;
+        }
 
         &::after {
             position: absolute;
@@ -33,13 +36,21 @@
         margin-top: 15%;
 
         & h2 {
-            font-size: rem(48px);
+            font-size: rem(46px);
+            font-family: AlegreyaSans-Medium;
             margin-bottom: 1%;
+            @include phone{
+                text-align: center;
+            }
         }
 
         & p {
             width: 41%;
             font-size: rem(18px);
+            @include phone{
+                width: 100%;
+                margin-bottom: 10%;
+            }
         }
 
     }
@@ -51,6 +62,11 @@
         margin-top: 5.5%;
         @include tablets{
             justify-content: space-between;
+        }
+        @include phone{
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
     }
 
@@ -75,11 +91,18 @@
             }
 
         }
+        @include phone{
+            flex-direction: row;
+            margin-bottom: 60px;
+            :last-child{
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__icon {
         height: rem(115px);
-        width: rem(115px);
+        min-width: rem(115px);
         border-radius: 50%;
         background: #F2F5F4;
         display: flex;
@@ -94,20 +117,30 @@
 
     &__text {
         text-align: center;
+        @include phone{
+            text-align: left;
+            margin-left: 20px;
+        }
 
         & h3 {
             margin-top: 12%;
             font-size: rem(27px);
             text-transform: inherit;
             font-family: AlegreyaSans;
+            @include phone{
+                margin-top: 0%;
+            }
         }
 
         & p {
-            margin-top: 5%;
+            margin-top: 6%;
             width: 90%;
             font-size: rem(17px);
             @include tablets{
                 width: 100%;
+            }
+            @include phone{
+                text-align: left;
             }
         }
     }

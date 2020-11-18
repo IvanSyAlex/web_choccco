@@ -3,6 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     height: rem(80px);
+    @include phone{
+        justify-content: center;
+    }
     
     &__check{
         display: flex;

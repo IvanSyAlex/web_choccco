@@ -7,6 +7,9 @@
     @include tablets {
         flex-direction: column;
         padding: 0 114px;
+        @include phone{
+            padding: 0;
+        }
     }
 
     &__col {
@@ -18,7 +21,7 @@
         &:last-child {
             margin-right: 0;
         }
-
+      
     }
 
     &__row {

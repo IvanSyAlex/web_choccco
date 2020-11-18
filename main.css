@@ -344,6 +344,11 @@ img {
     background: url("img/bg/sheet_sketch1.png") left top no-repeat;
   }
 }
+@media screen and (max-width: 480px) {
+  .why-chocco--bg {
+    background: none;
+  }
+}
 .why-chocco--bg::after {
   position: absolute;
   bottom: -61.1111111111rem;
@@ -367,12 +372,24 @@ img {
   margin-top: 15%;
 }
 .why-chocco__title h2 {
-  font-size: 2.6666666667rem;
+  font-size: 2.5555555556rem;
+  font-family: AlegreyaSans-Medium;
   margin-bottom: 1%;
+}
+@media screen and (max-width: 480px) {
+  .why-chocco__title h2 {
+    text-align: center;
+  }
 }
 .why-chocco__title p {
   width: 41%;
   font-size: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .why-chocco__title p {
+    width: 100%;
+    margin-bottom: 10%;
+  }
 }
 .why-chocco__list {
   display: flex;
@@ -383,6 +400,13 @@ img {
 @media screen and (max-width: 768px) {
   .why-chocco__list {
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-chocco__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 .why-chocco__item {
@@ -402,9 +426,18 @@ img {
 .why-chocco__item:last-child::after {
   display: none;
 }
+@media screen and (max-width: 480px) {
+  .why-chocco__item {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+  .why-chocco__item :last-child {
+    margin-bottom: 0;
+  }
+}
 .why-chocco__icon {
   height: 6.3888888889rem;
-  width: 6.3888888889rem;
+  min-width: 6.3888888889rem;
   border-radius: 50%;
   background: #F2F5F4;
   display: flex;
@@ -418,20 +451,36 @@ img {
 .why-chocco__text {
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .why-chocco__text {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
 .why-chocco__text h3 {
   margin-top: 12%;
   font-size: 1.5rem;
   text-transform: inherit;
   font-family: AlegreyaSans;
 }
+@media screen and (max-width: 480px) {
+  .why-chocco__text h3 {
+    margin-top: 0%;
+  }
+}
 .why-chocco__text p {
-  margin-top: 5%;
+  margin-top: 6%;
   width: 90%;
   font-size: 0.9444444444rem;
 }
 @media screen and (max-width: 768px) {
   .why-chocco__text p {
     width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-chocco__text p {
+    text-align: left;
   }
 }
 
@@ -512,6 +561,12 @@ img {
     align-items: center;
     text-align: center;
     margin-top: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    background: none;
+    margin-top: 16%;
   }
 }
 .reviews__content::before {
@@ -627,6 +682,11 @@ img {
     padding: 0 114px;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
+}
 .form__col {
   display: flex;
   flex-direction: column;
@@ -693,6 +753,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   height: 4.4444444444rem;
+}
+@media screen and (max-width: 480px) {
+  .controller {
+    justify-content: center;
+  }
 }
 .controller__check {
   display: flex;
