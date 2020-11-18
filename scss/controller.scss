@@ -5,6 +5,7 @@
     height: rem(80px);
     @include phone{
         justify-content: center;
+        margin-bottom: 6%;
     }
     
     &__check{

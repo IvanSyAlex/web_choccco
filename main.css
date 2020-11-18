@@ -507,6 +507,11 @@ img {
   background: url("img/bg/barries_delivery.png") bottom 11% left 5% no-repeat, url("img/bg/fon.png") center/cover no-repeat;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .section__delivery--bg {
+    background: url("img/bg/fon.png") center/cover no-repeat;
+  }
+}
 .section__delivery--bg:before {
   content: url("img/bg/blackberry.png");
   position: absolute;
@@ -518,6 +523,11 @@ img {
   position: absolute;
   right: 1%;
   bottom: 9%;
+}
+@media screen and (max-width: 480px) {
+  .section__delivery--bg:after {
+    display: none;
+  }
 }
 .section__container {
   display: flex;
@@ -533,6 +543,11 @@ img {
   .section__title {
     margin-top: 3%;
     font-family: AlegreyaSans-Medium;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    text-align: center;
   }
 }
 .section__title--delivery {
@@ -757,6 +772,7 @@ img {
 @media screen and (max-width: 480px) {
   .controller {
     justify-content: center;
+    margin-bottom: 6%;
   }
 }
 .controller__check {
