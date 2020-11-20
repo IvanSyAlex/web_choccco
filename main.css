@@ -69,31 +69,31 @@ img {
 
 @font-face {
   font-family: "AlegreyaSans-Bold";
-  src: url("/fonts/AlegreyaSans-Bold.ttf");
+  src: url("fonts/AlegreyaSans-Bold.ttf");
 }
 @font-face {
   font-family: "AlegreyaSans-Black";
-  src: url("/fonts/AlegreyaSans-Black.ttf");
+  src: url("fonts/AlegreyaSans-Black.ttf");
 }
 @font-face {
   font-family: "AlegreyaSans-italic";
-  src: url("/fonts/AlegreyaSans-BoldItalic.ttf");
+  src: url("fonts/AlegreyaSans-BoldItalic.ttf");
 }
 @font-face {
   font-family: "AlegreyaSans-Light";
-  src: url("/fonts/AlegreyaSans-Light.ttf");
+  src: url("fonts/AlegreyaSans-Light.ttf");
 }
 @font-face {
   font-family: "AlegreyaSans-Regular";
-  src: url("/fonts/AlegreyaSans-Regular.ttf");
+  src: url("fonts/AlegreyaSans-Regular.ttf");
 }
 @font-face {
   font-family: "AlegreyaSans-Medium";
-  src: url("/fonts/AlegreyaSans-Medium.ttf");
+  src: url("fonts/AlegreyaSans-Medium.ttf");
 }
 @font-face {
   font-family: "AlegreyaSans-Thin";
-  src: url("/fonts/AlegreyaSans-Thin.ttf");
+  src: url("fonts/AlegreyaSans-Thin.ttf");
 }
 /* welcome_page*/
 .head {
@@ -237,6 +237,11 @@ img {
 .descriptor h1 {
   font-size: 2.7777777778rem;
 }
+@media screen and (max-width: 768px) {
+  .descriptor h1 {
+    margin-top: 30px;
+  }
+}
 .descriptor p {
   margin-top: 0.9444444444rem;
   font-size: 1.1666666667rem;
@@ -253,13 +258,18 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
   }
-  .descriptor::before {
+  .descriptor:before {
     content: "";
+    display: block;
     width: 17.5555555556rem;
     height: 18.3333333333rem;
-    background: url(/img/bg_tablets/candy.png) center center no-repeat;
+    background: url("/img/bg_tablets/candy.png") no-repeat;
+    background-color: transparent;
     background-size: contain;
+    position: absolute;
+    bottom: 130%;
   }
   .descriptor p {
     padding: 0 16%;
@@ -421,7 +431,7 @@ img {
   right: 0;
   top: 2.1111111111rem;
   transform: translateX(50%);
-  content: url("bg/Combined_shape.png");
+  content: url("img/bg/Combined_shape.png");
 }
 .why-chocco__item:last-child::after {
   display: none;
