@@ -1,4 +1,9 @@
 .contacts {
+    &__street{
+        font-size: rem(18px);
+        text-transform: none;
+        margin-bottom: rem(10px);
+    }
     &__phone {
         display: flex;
         flex-direction: row;
@@ -15,8 +20,6 @@
         & img {
             height: rem(12px);
             width: rem(12px);
-
         }
     }
-
 }

@@ -19,7 +19,8 @@
         margin-left: rem(40px);
     }
 
-    &__icon img {
+    &__icon svg {
+        fill: white;
         width: rem(55px);
         height: rem(45px);
     }

@@ -109,7 +109,8 @@
         justify-content: center;
         align-items: center;
 
-        & img {
+        & svg {
+            fill: black;
             height: rem(70px);
             width: rem(70px);
         }
