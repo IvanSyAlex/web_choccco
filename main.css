@@ -184,6 +184,40 @@ img {
   font-size: 1rem;
   color: white;
 }
+.menu--hamburger--active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #313131;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu--hamburger--close {
+  position: absolute;
+  fill: white;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  top: 2.3333333333rem;
+  right: -555.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.menu__list--hamburger--active {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.menu__item--hamburger--active {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 14px;
+}
 
 .contacts__street {
   font-size: 1rem;
@@ -304,6 +338,7 @@ img {
 .button--green:hover {
   background: white;
   color: #365A49;
+  border: 1px solid #365A49;
 }
 .button--transperent {
   background: transparent;
@@ -500,6 +535,118 @@ img {
   .why-chocco__text p {
     text-align: left;
   }
+}
+
+/* products*/
+.products__container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.products__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products__image img {
+  width: 100%;
+  height: 100%;
+  min-width: 22.2222222222rem;
+  object-fit: contain;
+}
+.products__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.4444444444rem;
+  max-width: 22.2222222222rem;
+  color: #666666;
+}
+.products__menu-component {
+  width: 5rem;
+  height: 5rem;
+  background-color: #86C3D7;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  padding: 0.6666666667rem;
+  position: relative;
+}
+.products__menu-component svg {
+  fill: white;
+  width: 3.0555555556rem;
+  height: 2.5rem;
+}
+.products__menu-component:hover .products__list {
+  left: 100%;
+  transition: 0.3s;
+  opacity: 1;
+}
+.products__list {
+  display: flex;
+  position: absolute;
+  color: black;
+  top: 0;
+  right: -9999px;
+  width: 15.1666666667rem;
+  height: 19.1111111111rem;
+  background: silver;
+  border-radius: 3%;
+  padding: 1rem 0.8888888889rem;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: 0;
+  transition: opacity;
+  z-index: 10;
+}
+.products__items {
+  display: flex;
+  text-align: left;
+}
+.products__items svg {
+  fill: black;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  margin-right: 1.1111111111rem;
+  margin-left: 0.7777777778rem;
+}
+.products__items span {
+  flex: 1;
+}
+.products__titles {
+  margin-top: 1.9444444444rem;
+  font-size: 2rem;
+  color: black;
+}
+.products__info p {
+  margin-top: 1.2777777778rem;
+}
+.products__properties-list {
+  display: flex;
+  flex-direction: row;
+}
+.products__properties-item {
+  margin-top: 1.3333333333rem;
+  margin-right: 2.4444444444rem;
+}
+.products__energy-value:last-child {
+  margin-right: 0;
+}
+.products__energy-value {
+  display: flex;
+  flex-direction: column;
+}
+.products__order {
+  display: flex;
+  align-items: center;
+  margin-top: 1.3333333333rem;
+}
+.products__order h3 {
+  font-family: "AlegreyaSans-Light";
+  font-size: 3.3333333333rem;
+  font-weight: 500;
+  color: black;
+  text-transform: lowercase;
+  padding-right: 1.1111111111rem;
 }
 
 /* reviews*/

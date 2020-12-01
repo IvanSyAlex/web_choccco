@@ -23,4 +23,39 @@
         font-size: rem(18px);
         color: white;
     }
+    &--hamburger--active{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background:  #313131;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    &--hamburger--close{
+        position: absolute;
+        fill: white;
+        width: rem(20px);
+        height: rem(20px);
+        top: rem(42px);
+        right: rem(-9999px);;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    &__list--hamburger--active{
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item--hamburger--active{
+        font-size: rem(36px);
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding-bottom: 14px ;
+    }
 }

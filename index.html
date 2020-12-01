@@ -19,14 +19,17 @@
                         </a>
                     </div>
                     <nav class="menu">
+                        <svg class="menu--hamburger--close">
+                            <use xlink:href="./img/sprite_interactive.svg#close"></use>
+                        </svg>
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="/">О нас</a></li>
-                            <li class="menu__item"><a href="/">Батончики</a></li>
-                            <li class="menu__item"><a href="/">Команда</a></li>
-                            <li class="menu__item"><a href="/">Меню</a></li>
-                            <li class="menu__item"><a href="/">Отзывы</a></li>
-                            <li class="menu__item"><a href="/">Как мы работаем</a></li>
-                            <li class="menu__item"><a href="/">Контакты</a></li>
+                            <li class="menu__item "><a href="/">О нас</a></li>
+                            <li class="menu__item "><a href="/">Батончики</a></li>
+                            <li class="menu__item "><a href="/">Команда</a></li>
+                            <li class="menu__item "><a href="/">Меню</a></li>
+                            <li class="menu__item "><a href="/">Отзывы</a></li>
+                            <li class="menu__item "><a href="/">Как мы работаем</a></li>
+                            <li class="menu__item "><a href="/">Контакты</a></li>
                         </ul>
                     </nav>
                     <address class="contacts">
@@ -35,11 +38,12 @@
                             <span style="white-space: nowrap;">8 800 903 90 90</span>
                         </a>
                     </address>
-                    <a href="" class="hamburger">
-                        <span class="hamburger__item"></span>
-                        <span class="hamburger__item"></span>
-                        <span class="hamburger__item"></span>
-                    </a>
+                        <a href="" class="hamburger">
+                           
+                            <span class="hamburger__item"></span>
+                            <span class="hamburger__item"></span>
+                            <span class="hamburger__item"></span>
+                        </a>
                 </header>
                 <div class="welcom-page__main">
                     <div class="descriptor">
@@ -137,6 +141,85 @@
                 </ul>
             </div>
 
+        </section>
+        <section class="products">
+            <div class="container products__container">
+                <a href="#" class="products__left"></a>
+                <div class="products__slider">
+                    <div class="products__image"><img src="img/image/product.jpg" alt=""></div>
+                    <div class="products__info">
+                        <div class="products__menu-component ">
+                            <svg>
+                                <use xlink:href="./img/sprite.svg#chocolate-bar"></use>
+                            </svg>
+                            состав
+                            <ul class="products__list">
+                                <li class="products__items">
+                                    <svg>
+                                        <use xlink:href="./img/sprite_component.svg#grape"></use>
+                                    </svg>
+                                    <span>Виноград </span> <b>25 g.</b>
+                                </li>
+                                <li class="products__items">
+                                    <svg>
+                                        <use xlink:href="./img/sprite_component.svg#nut"></use>
+                                    </svg>
+                                    <span>Грецкий орех</span> <b>25 g.</b>
+                                </li>
+                                <li class="products__items">
+                                    <svg>
+                                        <use xlink:href="./img/sprite_component.svg#almound"></use>
+                                    </svg>
+                                    <span>Кунжутное семя</span> <b>25 g.</b>
+                                </li>
+                                <li class="products__items">
+                                    <svg>
+                                        <use xlink:href="./img/sprite_component.svg#powder"></use>
+                                    </svg>
+                                    <span>Сухое молоко</span> <b>25 g.</b>
+                                </li>
+                                <li class="products__items">
+                                    <svg>
+                                        <use xlink:href="./img/sprite_component.svg#apitherapy"></use>
+                                    </svg>
+                                    <span>Зам. сахара </span> <b>25 g.</b>
+                                </li>
+                                <li class="products__items">
+                                    <svg>
+                                        <use xlink:href="./img/sprite_component.svg#beans"></use>
+                                    </svg>
+                                    <span>Какао бобы</span> <b>25 g.</b>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 class="products__titles">Батончик “Гранола Виноград”</h2>
+                        <p>
+                            Гранола из винограда, грецкого ореха и кунжутных семечек.
+                            В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                        </p>
+                        <ul class="products__properties-list">
+                            <li class="products__properties-item">
+                                <div class="products__energy-value">
+                                    <span>Калорийность</span>
+                                    <b>110 ккал</b>
+                                </div>
+                            </li>
+                            <li class="products__properties-item">
+                                <div class="products__energy-value">
+                                    <span>Вес</span>
+                                    <b>95 грамм</b>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="products__order">
+                            <h3> 140 &#8381;.</h3>
+                            <button class="button button--green">заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="products__right"></a>
+            </div>
         </section>
         <section class="section section__reviews--bg">
             <div class="container section__container ">
@@ -271,8 +354,8 @@
                         <ul class="social-media__list">
                             <li class="social-media__items"><a class="social-media__facebook" href="//"></a></li>
                             <li class="social-media__items"><a class="social-media__vk" href="//"></a> </li>
-                            <li class="social-media__items"><a class="social-media__instagram"href="//"></a></li>
-                            <li class="social-media__items"><a class="social-media__telegram"href="//"></a></li>
+                            <li class="social-media__items"><a class="social-media__instagram" href="//"></a></li>
+                            <li class="social-media__items"><a class="social-media__telegram" href="//"></a></li>
                         </ul>
                     </div>
                 </footer>
@@ -292,6 +375,7 @@
             <li class="fixed-menu__item"><a href="/" class="fixed-menu__link"></a></li>
         </ul>
     </div>
+    <script src="js/burger_menu.js"></script>
 </body>
 
 </html>

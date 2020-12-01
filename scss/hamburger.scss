@@ -1,14 +1,13 @@
 .hamburger {
-    height: 24px;
-    width: 24px;
-    flex-direction: column;
-    justify-content: space-around;
-    display: none;
+        height: 24px;
+        width: 24px;
+        flex-direction: column;
+        justify-content: space-around;
+        display: none;
 
     @include tablets {
         display: inline-flex;
     }
-
 
     &__item {
         display: block;
