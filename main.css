@@ -186,15 +186,16 @@ img {
 }
 .menu--hamburger--active {
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
   background: #313131;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .menu--hamburger--close {
   position: absolute;
@@ -403,7 +404,7 @@ img {
 }
 .why-chocco--bg::after {
   position: absolute;
-  bottom: -61.1111111111rem;
+  bottom: -54.4444444444rem;
   left: 0;
   content: url("img/bg/candy_bar.png");
 }
@@ -538,21 +539,68 @@ img {
 }
 
 /* products*/
+.products--bg {
+  background: url("/img/bg/blue.png") right 2% bottom 5% no-repeat, url("img/bg/fern_products.jpg") right bottom -20% no-repeat;
+  z-index: 10;
+}
 .products__container {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100vh;
+}
+.products__left {
+  cursor: pointer;
+  padding-right: 1.6666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .products__left {
+    align-self: flex-start;
+    margin-top: 280px;
+    padding-right: 0;
+  }
+}
+.products__left svg {
+  width: 0.7777777778rem;
+  height: 1.5555555556rem;
+  transform: rotate(-180deg);
+}
+.products__right {
+  cursor: pointer;
+  padding-left: 1.6666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .products__right {
+    align-self: flex-start;
+    margin-top: 280px;
+    padding-left: 0px;
+  }
+}
+.products__right svg {
+  width: 0.7777777778rem;
+  height: 1.5555555556rem;
 }
 .products__slider {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .products__slider {
+    flex-direction: column;
+  }
+}
 .products__image img {
   width: 100%;
   height: 100%;
-  min-width: 22.2222222222rem;
+  min-width: 19.4444444444rem;
   object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .products__image img {
+    max-width: 22.2222222222rem;
+    min-width: 8.3333333333rem;
+  }
 }
 .products__info {
   display: flex;
@@ -560,6 +608,12 @@ img {
   margin-left: 2.4444444444rem;
   max-width: 22.2222222222rem;
   color: #666666;
+}
+@media screen and (max-width: 768px) {
+  .products__info {
+    text-align: center;
+    align-items: center;
+  }
 }
 .products__menu-component {
   width: 5rem;
@@ -570,6 +624,11 @@ img {
   text-align: center;
   padding: 0.6666666667rem;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .products__menu-component {
+    display: none;
+  }
 }
 .products__menu-component svg {
   fill: white;
@@ -587,7 +646,8 @@ img {
   color: black;
   top: 0;
   right: -9999px;
-  width: 15.1666666667rem;
+  max-width: 15.7222222222rem;
+  width: 30vw;
   height: 19.1111111111rem;
   background: silver;
   border-radius: 3%;
@@ -642,11 +702,16 @@ img {
 }
 .products__order h3 {
   font-family: "AlegreyaSans-Light";
-  font-size: 3.3333333333rem;
+  font-size: 4vw;
   font-weight: 500;
   color: black;
   text-transform: lowercase;
   padding-right: 1.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .products__order h3 {
+    font-size: 9vw;
+  }
 }
 
 /* reviews*/

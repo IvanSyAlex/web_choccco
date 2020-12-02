@@ -1,21 +1,61 @@
 .products {
+    &--bg{
+        background: url("/img/bg/blue.png")  right 2% bottom 5% no-repeat, url("img/bg/fern_products.jpg")  right  bottom -20% no-repeat;
+        z-index: 10;
+    }
     &__container {
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 100vh;
+        
+    }
+    &__left{
+        cursor: pointer;
+        padding-right: rem(30px);
+        @include tablets{
+            align-self: flex-start;
+            margin-top: 280px;
+            padding-right: 0;
+        }
+    }
+    &__left svg{
+        width: rem(14px);
+        height: rem(28px);
+        transform: rotate(-180deg);
+    }
+    &__right{
+        cursor: pointer;
+        padding-left: rem(30px);
+        @include tablets{
+            align-self: flex-start;
+            margin-top: 280px;
+            padding-left: 0px;
+        }
+    }
+    &__right svg{
+        width: rem(14px);
+        height: rem(28px); 
     }
 
     &__slider {
         display: flex;
         justify-content: center;
         align-items: center;
+        @include tablets{
+            flex-direction: column;
+        }
     }
 
     &__image img {
         width: 100%;
         height: 100%;
-        min-width: rem(400px);
+        min-width: rem(350px);
         object-fit: contain;
+        @include tablets{
+            max-width: rem(400px) ;
+            min-width: rem(150px);
+        }
     }
 
     &__info {
@@ -24,6 +64,10 @@
         margin-left: rem(44px);
         max-width: rem(400px);
         color: #666666;
+        @include tablets{
+            text-align: center;
+            align-items: center;
+        }
     }
 
     &__menu-component {
@@ -35,6 +79,9 @@
         text-align: center;
         padding: rem(12px);
         position: relative;
+        @include tablets{
+            display: none;
+        }
     }
 
     &__menu-component svg {
@@ -57,7 +104,8 @@
         color: black;
         top: 0;
         right: -9999px;
-        width: rem(273px);
+        max-width: rem(283px);
+        width: 30vw;
         height: rem(344px);
         background: silver;
         border-radius: 3%;
@@ -88,7 +136,6 @@
 
     &__titles {
         margin-top: rem(35px);
-        ;
         font-size: rem(36px);
         color: black;
     }
@@ -124,10 +171,13 @@
 
     &__order h3 {
         font-family: 'AlegreyaSans-Light';
-        font-size: rem(60px);
+        font-size: 4vw;
         font-weight: 500;
         color: black;
         text-transform: lowercase;
         padding-right: rem(20px);
+        @include tablets{
+            font-size: 9vw;
+        }
     }
 }

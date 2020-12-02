@@ -7,6 +7,7 @@ const menu_item = document.querySelectorAll('.menu__item');
 function openMenu(e){
     e.preventDefault();
     menu.classList.toggle('menu--hamburger--active');
+    document.body.style.position = 'fixed';
     closeHamberger.style.right =  42 +'px';
     closeHamberger.style.opacity = 1;
     menu_list.classList.toggle('menu__list--hamburger--active');
@@ -24,6 +25,7 @@ function closeMenu(){
        menu_item[i].classList.remove('menu__item--hamburger--active');
     }  
 }
+
 openHamburger.addEventListener('click', e => openMenu(e));//открыть меню
 closeHamberger.addEventListener('click', closeMenu);//закрыть меню
 

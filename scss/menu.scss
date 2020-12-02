@@ -25,16 +25,16 @@
     }
     &--hamburger--active{
         position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
+        left: -10px;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
         background:  #313131;
         z-index: 1000;
         display: flex;
         align-items: center;
         justify-content: center;
-       
+       overflow: hidden;
     }
     &--hamburger--close{
         position: absolute;
