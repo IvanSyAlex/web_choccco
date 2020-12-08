@@ -18,6 +18,10 @@
             }
         }
     }
+    &__item:hover{
+        border: rem(4px) solid#428b69;
+        box-shadow: 0 0 5px 2px #428b69;
+    }
 
     &__item--active {
         border: rem(4px) solid #365A49;

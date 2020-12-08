@@ -1,3 +1,4 @@
+
 .products {
     &--bg{
         background: url("/img/bg/blue.png")  right 2% bottom 5% no-repeat, url("img/bg/fern_products.jpg")  right  bottom -20% no-repeat;
@@ -8,6 +9,8 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+
+       
         
     }
     &__left{
@@ -38,7 +41,8 @@
         height: rem(28px); 
     }
 
-    &__slider {
+  
+    &__slider-item {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -180,4 +184,9 @@
             font-size: 9vw;
         }
     }
+}
+.bx-wrapper{
+    -webkit-box-shadow: none;
+    -moz-box-shadow:  none;  
+    box-shadow:      none;   
 }
