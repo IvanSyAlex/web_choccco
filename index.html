@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="main.css">
     
     <title>Chocco</title>
@@ -12,6 +13,7 @@
 
 <body>
     <div class="wrapper">
+       
         <section class="head  head--bg">
             <div class="container head__container">
                 <header class="header">
@@ -41,7 +43,6 @@
                         </a>
                     </address>
                     <a href="" class="hamburger">
-
                         <span class="hamburger__item"></span>
                         <span class="hamburger__item"></span>
                         <span class="hamburger__item"></span>
@@ -492,15 +493,16 @@
             <div class="container section__container ">
                 <h2 class="section__title section__title--delivery">Закажите доставку</h2>
                 <form class="form">
+                    <input type="hidden" name="to" value="sychyov-86@mail.ru">
                     <div class="form__col">
                         <div class="form__row">
                             <label class="form__block">
                                 <h4 class="form__title">Имя</h4>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="name">
                             </label>
                             <label class="form__block">
                                 <h4 class="form__title">Телефоне</h4>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="phone">
                             </label>
                         </div>
                         <div class="form__row">
@@ -532,7 +534,7 @@
                         <div class="form__row">
                             <label class="form__block">
                                 <h4 class="form__title">Коментарий</h4>
-                                <textarea type="text" class="form__input form__input--textarea "></textarea>
+                                <textarea type="text" class="form__input form__input--textarea" name="comment"></textarea>
                             </label>
                         </div>
                         <div class="form__row">
@@ -561,8 +563,6 @@
                             </div>
                         </div>
                     </div>
-
-                </form>
                 </form>
             </div>
         </section>
@@ -588,7 +588,19 @@
                 </footer>
             </div>
         </section>
+        <div id="modal" class="modal" 
+        style="
+        
+        display: none; ">
+            <div class="modal__container">
+                <div class="modal__content">
+                    Не получилось отправиь сообщение
+                </div>
+                <a class="button app--button button--green">закрыть</a>
+            </div>
+        </div>
     </div>
+
     <div class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item"><a href="/" class="fixed-menu__link fixed-menu__link--active"></a></li>
@@ -608,6 +620,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

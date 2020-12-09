@@ -4,6 +4,9 @@
     border-radius: rem(35px);
     border: none;
     padding: rem(15px) rem(35px);
+    &:focus{
+        border: none !important;
+    }
 
     &--white {
         background: white;
@@ -13,6 +16,7 @@
     &:hover {
         background: #365A49;
         color: white;
+        cursor: pointer;
     }
 
     &--green {
